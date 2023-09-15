@@ -217,4 +217,4 @@ Diary разделён на две рабочие области: слева н�
 > В этом случае выберите в верхнем меню пункт **View > Force Reload**. Если не помогло, откройте заметку [[DiaryButton]] в папке Templates, прогрузка кнопок должна помочь.
 
 ***
-[Страница проекта](https://evgenytarasov.ru/diary/?utm_source=diary&utm_medium=guide&utm_campaign=v1) • [Группа в Телеграм](https://t.me/vedenie_dnevnika) • GitHub
+[Страница проекта](https://evgenytarasov.ru/diary/?utm_source=diary&utm_medium=guide&utm_campaign=v1) • [Группа в Телеграм](https://t.me/vedenie_dnevnika) • [GitHub](https://github.com/velvetwind/obsidian-diary/)

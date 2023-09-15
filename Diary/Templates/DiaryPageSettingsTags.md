@@ -29,4 +29,4 @@ TABLE WITHOUT ID ("- " + length(rows.file.link) + " " + tag ) AS "`button-diaryM
 ```
 
 ***
-[Страница проекта](https://evgenytarasov.ru/diary/?utm_source=diary&utm_medium=guide&utm_campaign=v1) • [Группа в Телеграм](https://t.me/vedenie_dnevnika) • GitHub
+[Страница проекта](https://evgenytarasov.ru/diary/?utm_source=diary&utm_medium=guide&utm_campaign=v1) • [Группа в Телеграм](https://t.me/vedenie_dnevnika) • [GitHub](https://github.com/velvetwind/obsidian-diary/)
