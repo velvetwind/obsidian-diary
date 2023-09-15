@@ -1,0 +1,353 @@
+{
+  "workspaces": {
+    "Дневник": {
+      "main": {
+        "id": "aa6726e3ea95575f",
+        "type": "split",
+        "children": [
+          {
+            "id": "5a406dd668cd954f",
+            "type": "tabs",
+            "dimension": 37.58146270818248,
+            "children": [
+              {
+                "id": "8936c528c41a30e0",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Notes/Diary.md",
+                    "mode": "preview",
+                    "source": true
+                  },
+                  "pinned": true
+                }
+              }
+            ]
+          },
+          {
+            "id": "37700bdb4351889e",
+            "type": "tabs",
+            "dimension": 62.41853729181752,
+            "children": [
+              {
+                "id": "3c25ff2ebd4c5477",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Notes/2023-01-05.md",
+                    "mode": "preview",
+                    "source": true
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "13db06c7c2fd744b",
+        "type": "split",
+        "children": [
+          {
+            "id": "2f27843659e8874c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b69580991c5c9e8a",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "b54a90774fc8b7dd",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "file:///Users/",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "6d877c17f420bdc1",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              },
+              {
+                "id": "33b1e6f912cdcc07",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              }
+            ],
+            "currentTab": 1
+          }
+        ],
+        "direction": "horizontal",
+        "width": 300,
+        "collapsed": true
+      },
+      "right": {
+        "id": "87742f7523f4423a",
+        "type": "split",
+        "children": [
+          {
+            "id": "c834e7bb9005ca91",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b6d026591a140cb0",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Notes/2023-01-05.md",
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "03dd2aee2c85de9a",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Notes/2023-01-05.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "65ea2ae2672ee202",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "c9174310a6412dc7",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Notes/2023-01-05.md"
+                  }
+                }
+              }
+            ],
+            "currentTab": 3
+          }
+        ],
+        "direction": "horizontal",
+        "width": 255.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Меню быстрого перехода": false,
+          "graph:Граф": false,
+          "canvas:Создать новый холст": false,
+          "daily-notes:Сегодняшняя заметка": false,
+          "templates:Вставить шаблон": false,
+          "command-palette:Открыть палитру команд": false,
+          "workspaces:Пространства": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-map-view:Open map view": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false
+        }
+      },
+      "active": "3c25ff2ebd4c5477"
+    },
+    "Заметки": {
+      "main": {
+        "id": "aa6726e3ea95575f",
+        "type": "split",
+        "children": [
+          {
+            "id": "37700bdb4351889e",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "3c25ff2ebd4c5477",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "Quick start.md",
+                    "mode": "preview",
+                    "source": true
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical"
+      },
+      "left": {
+        "id": "13db06c7c2fd744b",
+        "type": "split",
+        "children": [
+          {
+            "id": "2f27843659e8874c",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b69580991c5c9e8a",
+                "type": "leaf",
+                "state": {
+                  "type": "file-explorer",
+                  "state": {
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "b54a90774fc8b7dd",
+                "type": "leaf",
+                "state": {
+                  "type": "search",
+                  "state": {
+                    "query": "file:///Users/",
+                    "matchingCase": false,
+                    "explainSearch": false,
+                    "collapseAll": false,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical"
+                  }
+                }
+              },
+              {
+                "id": "6d877c17f420bdc1",
+                "type": "leaf",
+                "state": {
+                  "type": "starred",
+                  "state": {}
+                }
+              },
+              {
+                "id": "33b1e6f912cdcc07",
+                "type": "leaf",
+                "state": {
+                  "type": "bookmarks",
+                  "state": {}
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "horizontal",
+        "width": 247.5
+      },
+      "right": {
+        "id": "87742f7523f4423a",
+        "type": "split",
+        "children": [
+          {
+            "id": "c834e7bb9005ca91",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b6d026591a140cb0",
+                "type": "leaf",
+                "state": {
+                  "type": "backlink",
+                  "state": {
+                    "file": "Quick start.md",
+                    "collapseAll": true,
+                    "extraContext": false,
+                    "sortOrder": "alphabetical",
+                    "showSearch": false,
+                    "searchQuery": "",
+                    "backlinkCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "03dd2aee2c85de9a",
+                "type": "leaf",
+                "state": {
+                  "type": "outgoing-link",
+                  "state": {
+                    "file": "Quick start.md",
+                    "linksCollapsed": false,
+                    "unlinkedCollapsed": true
+                  }
+                }
+              },
+              {
+                "id": "65ea2ae2672ee202",
+                "type": "leaf",
+                "state": {
+                  "type": "tag",
+                  "state": {
+                    "sortOrder": "frequency",
+                    "useHierarchy": true
+                  }
+                }
+              },
+              {
+                "id": "c9174310a6412dc7",
+                "type": "leaf",
+                "state": {
+                  "type": "outline",
+                  "state": {
+                    "file": "Quick start.md"
+                  }
+                }
+              }
+            ],
+            "currentTab": 3
+          }
+        ],
+        "direction": "horizontal",
+        "width": 255.5
+      },
+      "left-ribbon": {
+        "hiddenItems": {
+          "switcher:Меню быстрого перехода": false,
+          "graph:Граф": false,
+          "canvas:Создать новый холст": false,
+          "daily-notes:Сегодняшняя заметка": false,
+          "templates:Вставить шаблон": false,
+          "command-palette:Открыть палитру команд": false,
+          "workspaces:Пространства": false,
+          "templater-obsidian:Templater": false,
+          "obsidian-map-view:Open map view": false,
+          "table-editor-obsidian:Advanced Tables Toolbar": false
+        }
+      },
+      "active": "3c25ff2ebd4c5477"
+    }
+  },
+  "active": "Заметки"
+}

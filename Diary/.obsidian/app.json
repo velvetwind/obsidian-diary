@@ -1,0 +1,9 @@
+{
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "Media",
+  "promptDelete": false,
+  "showInlineTitle": false,
+  "livePreview": false,
+  "readableLineLength": true,
+  "defaultViewMode": "preview"
+}

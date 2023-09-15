@@ -1,0 +1,163 @@
+/* ------------------------------------------------- */
+/* ------ DIARY > Classic Theme V1.0 ------ */
+/* ------------------------------------------------- */
+
+/* Базовые настройки */
+:root {
+    --note-sidebar: 30px; /* Отступ для сайдбара, по умолчанию 30px */
+    --note-width: auto; /* Ширина списка записей, по умолчанию auto (и не больше ширины контейнера)  */
+    --note-line: 3; /* Количество строк в записи вместе с заголовком, по умолчанию 3 (но не меньше 2) */
+    --text-sizeBody: 1rem; /* Размер шрифта */
+    --img-border: 0; /* Обводка фото в px, по умолчанию отключена — 0, для активации — 1px */
+    
+/* Настройки основных цветов светлой темы */
+    --data-colorMain: #4B84A3; /* Основной цвет, по умолчанию для светлой темы #4B84A3; */
+    --text-colorMain: #fff; /* Цвет текста на фонах с основным цветом */
+    --data-colorSecond: #78b1d1; /* Дополнительный цвет, по умолчанию для светлой темы #78b1d1; */
+
+/* Настройки основных цветов тёмной темы */
+    --data-colorMainDark: #67818e; /* Основной цвет, по умолчанию для тёмной темы #67818e; */
+    --text-colorMainDark: #fff; /* Цвет текста на фонах с основным цветом тёмной темы  */
+    --data-colorSecondDark: #2f3e45; /* Дополнительный цвет, по умолчанию для тёмной темы #2f3e45; */
+
+/* Настройки других цветов */   
+    --bottom-color: #848484; /* Цвет адреса, погоды и разделителей */
+    --img-colorBorder: #ebeaea; /* Цвет обводки фото (не отображается, если обводка отключена) */
+
+/* Настройки цветов для значков избранного и настроения */
+    --diaryStar-color: #feb639; /* Избранное */
+    --diaryMood5-color: #48a05b; /* Отлично */
+    --diaryMood4-color: #48a05b; /* Хорошо */
+    --diaryMood3-color: #67818e; /* Нормально */
+    --diaryMood2-color: #fa8d91; /* Плохо */
+    --diaryMood1-color: #fa8d91; /* Ужасно */
+}
+
+/* Настройки цветов тегов и обводки */
+a[href="#★"] {color: var(--diaryStar-color) !important; border-color: var(--diaryStar-color) !important;} /* Избранное */
+a[href="#▲"] {color: var(--diaryMood5-color) !important; border-color: var(--diaryMood5-color) !important} /* Отлично */
+a[href="#◉"] {color: var(--diaryMood4-color) !important; border-color: var(--diaryMood4-color) !important} /* Хорошо */
+a[href="#◓"] {color: var(--diaryMood3-color) !important; border-color: var(--diaryMood3-color) !important} /* Нормально */
+body.theme-dark a[href="#◓"] {color: var(--data-colorMainDark) !important; border-color: var(--data-colorMainDark) !important} /* Нормально для тёмной темы */
+a[href="#●"] {color: var(--diaryMood2-color) !important; border-color: var(--diaryMood2-color) !important} /* Плохо */
+a[href="#▼"] {color: var(--diaryMood1-color) !important; border-color: var(--diaryMood1-color) !important} /* Ужасно */
+
+/* Настройки цветов других тегов */
+a[href="#анализ"] {color: var(--diaryMood1-color) !important; border-color: var(--diaryMood1-color) !important}
+a[href="#понедельник"], a[href="#вторник"], a[href="#среда"], a[href="#четверг"], a[href="#пятница"], a[href="#суббота"], a[href="#воскресенье"] {color: var(--data-colorMain) !important; border-color: var(--data-colorMain) !important}
+body.theme-dark a[href="#понедельник"], body.theme-dark  a[href="#вторник"], body.theme-dark a[href="#среда"], body.theme-dark a[href="#четверг"], body.theme-dark a[href="#пятница"], body.theme-dark a[href="#суббота"], body.theme-dark a[href="#воскресенье"] {color: var(--data-colorMainDark) !important; border-color: var(--data-colorMainDark) !important}
+
+/* Отображение значка у ссылок */
+a[href^="geo"] {background-image: none; padding-right: 0px;} /* Скрыто по умолчанию, для отображения удалить всю строку */
+
+/* Настройки символов меток, по умолчанию используются символы ★ ▲ ● ◒ ● ▼ */
+.diary__star::before {content: "★"; color: var(--diaryStar-color); margin-right: 0.3rem} /* Избранное */
+.diary__mood5::after {content: "▲"; color: var(--diaryMood5-color)} /* Отлично */
+.diary__mood4::after {content: "●"; color: var(--diaryMood4-color)} /* Хорошо */
+.diary__mood3::after {content: "●"; color: var(--diaryMood3-color)} /* Нормально */
+.diary__mood2::after {content: "●"; color: var(--diaryMood2-color)} /* Плохо */
+.diary__mood1::after {content: "▼"; color: var(--diaryMood1-color)} /* Ужасно */
+
+/* Стили для списка записей, здесь ничего менять не надо */
+.diary.diary_plus {background-color: var(--background-primary); position: relative;}
+.diary.diary_plus .mod-header {display: none}
+.diary.diary_plus .markdown-preview-sizer.markdown-preview-section {max-width: 100%}
+.diary__year {background-image: linear-gradient(150deg, var(--data-colorMain), var(--data-colorMain), var(--data-colorSecond)); color: var(--text-colorMain); padding: 0.2rem 0 0.2rem 0.7rem; border-radius: 5px; width: 100%; font-size: calc(var(--text-sizeBody) * 1.1); font-weight: 700; line-height: 1.4; display: block; margin-top: calc(var(--note-sidebar) - 4px);}
+.diary__year.diary__yearFirst {margin-top: var(--note-sidebar)}
+body.theme-dark .diary__year {background-image: linear-gradient(150deg, var(--data-colorSecondDark), var(--data-colorSecondDark), var(--data-colorMainDark)); color: var(--text-colorMainDark); padding: 0.2rem 0 0.2rem 0.7rem; border-radius: 5px; width: 100%; font-size: calc(var(--text-sizeBody) * 1.1); font-weight: 700; line-height: 1.4; display: block; margin-top: calc(var(--note-sidebar) - 4px);}
+body.theme-dark .diary__year.diary__yearFirst {margin-top: var(--note-sidebar)}
+a.diary__link {font-size: var(--text-sizeBody); box-shadow: 0px 5px 9px -11px #b0b0b0; max-width: var(--note-width); padding: 0.8rem 0 0.8rem 0; border-bottom: 1px solid var(--background-modifier-border); border-radius: 0; text-decoration: none; display: block;}
+.diary__link:hover {box-shadow: 0px 8px 11px -11px #b0b0b0}
+.diary__link:focus {padding-right: 1.1rem; border-right: 0.5rem solid var(--data-colorMain); border-radius: 10px; box-shadow: 13px 0px 17px -15px #b0b0b0; transition-duration: 0.6s;}
+body.theme-dark .diary__link:focus {padding-right: 1.1rem; border-right: 0.5rem solid var(--data-colorMainDark); border-radius: 10px; box-shadow: 13px 0px 17px -15px #b0b0b0; transition-duration: 0.6s;}
+.diary__star, .diary__date {display: inline-block; margin-bottom: 0.5rem}
+.diary__date {color: var(--data-colorMain)}
+body.theme-dark .diary__date {color: var(--data-colorMainDark)}
+.diary__date::first-letter {text-transform: uppercase}
+.diary__excerpt {flex-basis: auto;}
+.diary__body {display: flex; justify-content: space-between; align-items: flex-start}
+.diary__title {overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; font-weight: 700; color: var(--text-normal)}
+.diary__text {overflow: hidden; display: -webkit-box; -webkit-line-clamp: calc(var(--note-line) - 1); -webkit-box-orient: vertical; color: var(--text-normal)}
+.diary__text-long {overflow: hidden; display: -webkit-box; -webkit-line-clamp: var(--note-line); -webkit-box-orient: vertical; color: var(--text-normal)}
+.diary__text-long-long {overflow: hidden; display: -webkit-box; -webkit-line-clamp: calc(var(--note-line) + 1); -webkit-box-orient: vertical; color: var(--text-normal)}
+.diary__position, .diary__weather, .diary__mood {color: var(--bottom-color); font-size: calc(var(--text-sizeBody) * 0.8)}
+.diary__devide::before {margin: 0 0.2rem; color: var(--bottom-color); content: "\2022"; opacity: 0.7} 
+.diary__imgContainer {display: block; flex-basis: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1.2); flex-shrink: 0; margin-left: 2rem}
+.diary__img {object-fit: cover; width: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1.2); height: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1.2); border-radius: 6px; box-shadow: 0px 0px var(--img-border) var(--img-border) var(--img-colorBorder)}
+.diary__hide {display: none !important}
+
+/* Стили для кнопок светлой темы */
+body.theme-light .diary-buttonActive {line-height: 110%; height: 1.7rem !important; background: var(--data-colorSecond); color: var(--text-colorMain); font-size: 1rem; padding: 3px 15px; margin-right: 10px; margin-bottom: 10px; width: 45px; height: 1.7rem}
+body.theme-light .diary-buttonActive:hover {color: var(--data-colorMain)}
+body.theme-light .diary-button {line-height: 110%; height: 1.7rem !important;background: var(--data-colorMain); color: var(--text-colorMain); font-size: 1rem; padding: 3px 15px; margin-right: 10px; margin-bottom: 10px; width: 45px; height: 1.7rem;}
+body.theme-light .diary-button:hover {background: var(--data-colorSecond)}
+body.theme-light .diary-buttonWide {background: var(--data-colorMain); color: var(--text-colorMain); font-size: 1rem; padding: 3px 15px; margin-right: 10px; width: auto; height: 1.7rem; margin-bottom: 10px;}
+body.theme-light .diary-buttonWide:hover {background: var(--data-colorSecond)}
+body.theme-light .diary-buttonWideActive {background: var(--data-colorSecond); color: var(--text-colorMain); font-size: 1rem; padding: 3px 15px; margin-right: 10px; width: auto; height: 1.7rem; margin-bottom: 10px;}
+body.theme-light .diary-buttonWideActive:hover {background: var(--data-colorMain)}
+body.theme-light .diary-button-Link {line-height: 110%; height: 1.7rem !important; background: none; border: 2px solid var(--data-colorMain); color: var(--data-colorMain); font-size: 1rem; padding: 3px 15px; margin-right: 10px; width: 45px; height: 1.7rem}
+body.theme-light .diary-button-Link:hover {border: 2px solid var(--data-colorSecond); color: var(--data-colorSecond);}
+
+
+/* Стили для кнопок тёмной темы */
+body.theme-dark .diary-buttonActive {line-height: 110%; height: 1.7rem !important; background: var(--data-colorMainDark); color: var(--text-colorMainDark); font-size: 1rem; padding: 3px 15px; margin-right: 10px; margin-bottom: 10px; width: 45px; height: 1.7rem}
+body.theme-dark .diary-buttonActive:hover {color: var(--data-colorSecondDark)}
+body.theme-dark .diary-button {line-height: 110%; height: 1.7rem !important; background: var(--data-colorSecondDark); color: var(--text-colorMainDark); font-size: 1rem; padding: 3px 15px; margin-right: 10px; margin-bottom: 10px; width: 45px; height: 1.7rem}
+body.theme-dark .diary-button:hover {background: var(--data-colorMainDark)}
+body.theme-dark .diary-buttonWide {background: var(--data-colorSecondDark); color: var(--text-colorMainDark); font-size: 1rem; padding: 3px 15px; margin-right: 10px; width: auto; height: 1.7rem; margin-bottom: 10px;}
+body.theme-dark .diary-buttonWide:hover {background: var(--data-colorMainDark)} 
+body.theme-dark .diary-buttonWideActive {background: var(--data-colorMainDark); color: var(--text-colorMainDark); font-size: 1rem; padding: 3px 15px; margin-right: 10px; width: auto; height: 1.7rem; margin-bottom: 10px;}
+body.theme-dark .diary-buttonWideActive:hover {background: var(--data-colorSecondDark)} 
+body.theme-dark .diary-button-Link {line-height: 110%; height: 1.7rem !important; background: none; border: 2px solid var(--data-colorSecondDark); color: var(--data-colorMainDark); font-size: 1rem; padding: 3px 15px; margin-right: 10px; width: 45px; height: 1.7rem}
+body.theme-dark .diary-button-Link:hover {border: 2px solid var(--data-colorMainDark); color: var(--data-colorMainDark);}
+
+/* Стили для Dataview */
+.diary .dataview.small-text {display: none} /* Скрывает счетчик  */
+.diary .dataview.dataview-error-box {border: none; min-height: 1rem; align-items: left; justify-content: left} /* Здесь и ниже, меняют сообщение об отсутствии записей на «Нет записей» */
+.diary .dataview.dataview-error-box::before {content: "Нет записей"; color: var(--bottom-color); font-size: calc(var(--font-adaptive-normal) - 2px)}
+.diary .dataview.dataview-error-box p {display: none}
+.diary .table-view-table > tbody > tr:hover {background-color: unset !important} 
+.diary .dataview.table-view-table {width: 100% !important;}
+
+/* Фиксированное меню */
+.diary.diary_plus .dataview th:nth-child(1) {position: fixed; top: calc(var(--header-height) - 8px); background-color: var(--background-primary); width: var(--line-width); max-width: 100%;  box-shadow: 0px 8px 11px -15px #b0b0b0; z-index: 999; padding-bottom: 5px; padding-top: 9px;}
+.diary.diary_plus {opacity: 0; animation: ani 2s forwards;} @keyframes ani { 0% {opacity: 0;} 100% {opacity: 1;} }
+
+/* Стили для мобильных устройств */
+.is-mobile .diary button {display: inline-block; width: 45px}
+.is-mobile .diary.diary_plus .dataview th:nth-child(1) {top: calc(var(--header-height))}
+.is-mobile .diary button.diary-buttonWide, .is-mobile .diary button.diary-buttonWideActive {display: inline-block; width: auto}
+.is-mobile .diary.diary_plus .markdown-preview-sizer.markdown-preview-section {max-width: 100%}
+@media (max-width: 500px) { 
+.diary__imgContainer {display: none} /* Отключает отображение фото на телефоне, для активации заменить на block */
+.diary__link {max-width: auto}
+}
+
+/* Загаловки */
+.diary h1, .diary h2, .diary h3, .diary h4, .diary h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.diary h1 {font-size: 2.488rem;}
+
+.diary h2 {font-size: 2.074rem;}
+
+.diary h3 {font-size: 1.728rem;}
+
+.diary h4 {font-size: 1.44rem;}
+
+.diary h5 {font-size: 1.2rem;}
+
+/* *** */
+.theme-dark .markdown-preview-view img {
+    opacity: 1;
+    transition: opacity 0.25s linear;
+}
+
+.view-header:not(:hover) .view-actions {
+    opacity: 0.1;
+    transition: opacity .25s ease-in-out;
+  }

@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "aa6726e3ea95575f",
+    "type": "split",
+    "children": [
+      {
+        "id": "37700bdb4351889e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c25ff2ebd4c5477",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Quick start.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "13db06c7c2fd744b",
+    "type": "split",
+    "children": [
+      {
+        "id": "2f27843659e8874c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b69580991c5c9e8a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b54a90774fc8b7dd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6d877c17f420bdc1",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "33b1e6f912cdcc07",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 247.5
+  },
+  "right": {
+    "id": "87742f7523f4423a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c834e7bb9005ca91",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6d026591a140cb0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Quick start.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "03dd2aee2c85de9a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Quick start.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "65ea2ae2672ee202",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c9174310a6412dc7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Quick start.md"
+              }
+            }
+          },
+          {
+            "id": "a752434861f1162c",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 255.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Меню быстрого перехода": false,
+      "graph:Граф": false,
+      "canvas:Создать новый холст": false,
+      "daily-notes:Сегодняшняя заметка": false,
+      "templates:Вставить шаблон": false,
+      "command-palette:Открыть палитру команд": false,
+      "workspaces:Пространства": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-map-view:Open map view": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "3c25ff2ebd4c5477",
+  "lastOpenFiles": [
+    "Notes/2023-01-05.md",
+    "Quick start.md",
+    "Templates/DiaryPageSettingsHowto.md",
+    "Notes/Diary.md",
+    "Templates/DiaryPageStar.md",
+    "Templates/DiaryPageMain.md",
+    "Templates/DiaryPageStarTag.md",
+    "Templates/DiaryPageMainCategory.md",
+    "Templates/DiaryPageAgoYear.md",
+    "Templates/DiaryPageAgo.md",
+    "Notes/1865-03-24.md",
+    "Notes/1865-09-22.md",
+    "Notes/1865-10-03.md",
+    "Notes/1865-11-05.md",
+    "Notes/1894-01-24.md",
+    "Notes/1894-02-09.md",
+    "Notes/1894-04-21.md",
+    "Notes/1894-05-03.md",
+    "Notes/1910-02-13.md",
+    "Notes/1910-02-20.md",
+    "Notes/1910-02-23.md",
+    "Notes/1910-03-06.md",
+    "Notes/1999-09-12.md",
+    "Notes/2023-01-02.md",
+    "Notes/2023-01-03.md",
+    "Notes/2023-01-04.md",
+    "Media/diary-razmetka-dnevnika.gif",
+    "Media/2000-01-02.jpg",
+    "Media/2023-01-04.jpg",
+    "Медиа/2023-01-28.jpg",
+    "Media/2001-01-02.jpg",
+    "Media/diary-lenta-zapisej-dnevnika.png",
+    "Media/diary-svojstva-zapisi-dnevnika.gif",
+    "Медиа/Снимок экрана 2023-09-12 в 23.26 2.png",
+    "Media/diary-nastroenie-v-dnevnike.png",
+    "Media/diary-upravlenie-stranicoj-zapisi.png",
+    "Ящик/Движок/Дневник",
+    "Ящик/Движок",
+    "Ящик"
+  ]
+}
