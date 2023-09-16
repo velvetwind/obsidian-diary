@@ -82,8 +82,8 @@ body.theme-dark .diary__date {color: var(--data-colorMainDark)}
 .diary__text-long-long {overflow: hidden; display: -webkit-box; -webkit-line-clamp: calc(var(--note-line) + 1); -webkit-box-orient: vertical; color: var(--text-normal)}
 .diary__position, .diary__weather, .diary__mood {color: var(--bottom-color); font-size: calc(var(--text-sizeBody) * 0.8)}
 .diary__devide::before {margin: 0 0.2rem; color: var(--bottom-color); content: "\2022"; opacity: 0.7} 
-.diary__imgContainer {display: block; flex-basis: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1.2); flex-shrink: 0; margin-left: 2rem}
-.diary__img {object-fit: cover; width: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1.2); height: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1.2); border-radius: 6px; box-shadow: 0px 0px var(--img-border) var(--img-border) var(--img-colorBorder)}
+.diary__imgContainer {display: block; flex-basis: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1); flex-shrink: 0; margin-left: 2rem}
+.diary__img {object-fit: cover; width: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1); height: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1); border-radius: 6px; box-shadow: 0px 0px var(--img-border) var(--img-border) var(--img-colorBorder)}
 .diary__hide {display: none !important}
 
 /* Стили для кнопок светлой темы */
