@@ -13,6 +13,6 @@ cssclasses:
 locations: 
 <%"---"%>
 
-`button-save` <% await tp.file.move("/Notes/" + tp.date.now())%>%%<%"\<\% tp.file.rename(tp.frontmatter[\"Дата\"]) \%\>"%>%%
+`button-DiarySave` <% await tp.file.move("/Notes/_link_" + tp.date.now())%>%%<%"\<\% tp.file.rename(tp.frontmatter[\"Дата\"]) \%\>"%>%%
 
 diary-link:: "<% "[[" + moment().endOf('month').format("YYYY-MM-DD") + "]]"%>"

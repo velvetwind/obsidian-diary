@@ -7,88 +7,88 @@ cssclass: diary, diary_plus
 
 ```button
 name ◉
-type type line(1) template
-action DiaryPageMain
+type line(1) template
+action DiaryFilterMain
 replace [1,100]
 class diary-button
 ```
-^button-diaryMain
+^button-DiaryFilterMain
+
+```button
+name ◉
+type line(1) template
+action DiaryFilterMainCategory
+replace [1,100]
+class diary-buttonActive
+```
+^button-DiaryFilterMainActive
 
 ```button
 name ◉
 type type line(1) template
-action DiaryPageMainCategory
+action DiaryFilterMain
 replace [1,100]
 class diary-buttonActive
 ```
-^button-diaryMainActive
-
-```button
-name ◉
-type type line(1) template
-action DiaryPageMain
-replace [1,100]
-class diary-buttonActive
-```
-^button-diaryMainActiveReturn
+^button-DiaryFilterMainActiveReturn
 
 ***
 
 ```button
 name ★
-type type line(1) template
-action DiaryPageStar
+type line(1) template
+action DiaryFilterStar
 replace [1,100]
 class diary-button
 ```
-^button-diaryStar
+^button-DiaryFilterStar
 
 ```button
 name ★
-type type line(1) template
-action DiaryPageStarTag
+type line(1) template
+action DiaryFilterStarTag
 replace [1,100]
 class diary-buttonActive
 ```
-^button-diaryStarActive
+^button-DiaryFilterStarActive
 
 ```button
 name ★
-type type line(1) template
-action DiaryPageStar
+type line(1) template
+action DiaryFilterStar
 replace [1,100]
 class diary-buttonActive
 ```
-^button-diaryStarActiveReturn
+^button-DiaryFilterStarActiveReturn
 
 ***
 
 ```button
 name ◀◀
-type type line(1) template
-action DiaryPageAgo
+type line(1) template
+action DiaryFilterAgo
 replace [1,100]
 class diary-button
 ```
-^button-diaryAgo
+^button-DiaryFilterAgo
 
 ```button
 name ◀◀
-type type line(1) template
-action DiaryPageAgoYear
+type line(1) template
+action DiaryFilterAgoYear
 replace [1,100]
 class diary-buttonActive
 ```
-^button-diaryAgoActive
+^button-DiaryFilterAgoActive
 
 ```button
 name ◀◀
-type type line(1) template
-action DiaryPageAgo
+type line(1) template
+action DiaryFilterAgo
 replace [1,100]
 class diary-buttonActive
 ```
-^button-diaryAgoActiveReturn
+^button-DiaryFilterAgoActiveReturn
 
 ***
 
@@ -98,18 +98,18 @@ type command
 action Map View: Open Map View
 class diary-button
 ```
-^button-diaryMap
+^button-DiaryFilterMap
 
 ***
 
 ```button
 name ✱*
-type type line(1) template
-action DiaryPageSettingsTemplates
+type line(1) template
+action DiaryFilterSettingsTemplates
 replace [1,100]
 class diary-button
 ```
-^button-diarySettings
+^button-DiaryFilterSettings
 
 ```button
 name ✱*
@@ -117,27 +117,27 @@ type link
 action obsidian://advanced-uri?vault=Diary&workspace=Заметки
 class diary-buttonActive
 ```
-^button-diarySettingsActive
+^button-DiaryFilterSettingsActive
 
 ***
 
 ```button
 name ✚
-type link
-action obsidian://open?vault=Diary&file=DiaryNew
+type line(6) template
+action DiaryNoteAdd
 class diary-button-Link
 ```
-^button-diaryNote
+^button-DiaryNoteAdd
 
 ## Меню настроек
 
 ```button
 name ➤ справочник
 type link
-action obsidian://open?vault=Diary&file=DiaryPageSettingsHowto
+action obsidian://open?vault=Diary&file=DiaryFilterSettingsHelp
 class diary-buttonWide
 ```
-^button-diaryPageHowto
+^button-DiaryFilterSettingsHelp
 
 ```button
 name ◐ светлая тема
@@ -145,7 +145,7 @@ type command
 action Использовать светлую тему
 class diary-buttonWide
 ```
-^button-diaryLight
+^button-DiaryLight
 
 ```button
 name ◑ темная тема
@@ -153,52 +153,43 @@ type command
 action Использовать темную тему
 class diary-buttonWide
 ```
-^button-diaryDark
+^button-DiaryDark
 
 ```button
-name ♯ теги дневника
+name # теги дневника
 type link
-type type line(1) template
-action DiaryPageSettingsTags
+type line(1) template
+action DiaryFilterSettingsTags
 replace [1,100]
 class diary-buttonWide
 ```
-^button-diaryPageSettingsTags
+^button-DiaryFilterSettingsTags
 
 ```button
-name ♯ теги дневника
+name # теги дневника
 class diary-buttonWideActive
 ```
-^button-diaryPageSettingsTagsActive
+^button-DiaryFilterSettingsTagsActive
 
 ```button
 name ❐ список шаблонов
 type link
-type type line(1) template
-action DiaryPageSettingsTemplates
+type line(1) template
+action DiaryFilterSettingsTemplates
 replace [1,100]
 class diary-buttonWide
 ```
-^button-diaryPageSettingsTemplates
+^button-DiaryFilterSettingsTemplates
 
 ```button
 name ❐ список шаблонов
 class diary-buttonWideActive
 ```
-^button-diaryPageSettingsTemplatesActive
+^button-DiaryFilterSettingsTemplatesActive
 
 
 # Кнопки действий
 ***
-
-```button
-name ✚ выбрать шаблон
-type line(6) template
-action DiaryNewChoice
-replace [6,6]
-class diary-buttonWide
-```
-^button-diaryNoteCreate
 
 ```button
 name Сохранить
@@ -207,7 +198,7 @@ action Templater: Replace templates in the active file
 remove true
 class diary-buttonWide
 ```
-^button-save
+^button-DiarySave
 
 ```button
 name ◉ DIARY
@@ -215,4 +206,4 @@ type link
 action obsidian://advanced-uri?vault=Diary&workspace=Дневник
 class diary-buttonWide
 ```
-^button-diaryOpen
+^button-DiaryOpen

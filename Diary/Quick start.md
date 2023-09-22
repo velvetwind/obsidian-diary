@@ -1,1 +1,1 @@
-![[DiaryPageSettingsHowto#Быстрый старт]]
+![[DiaryFilterSettingsHelp#Быстрый старт]]

@@ -213,7 +213,7 @@ Diary разделён на две рабочие области: слева н�
 
 > Иногда, если два хранилища открыты одновременно или одно из них было недавно открыто — кнопки навигации теряют стили и могут начать отображаться следующим образом:
 > 
-> *\`button-diaryMainSample\` \`button-diaryStarSample\` \`button-diaryAgoActiveSample\` \`button-diaryMapSample\` \`button-diarySettingsSample\` \`button-diaryNoteSample\`*
+> *\`button-DiaryFilterMain\` \`button-DiaryFilterStar\` \`button-DiaryFilterAgoActive\` \`button-DiaryFilterMap\` \`button-DiaryFilterSettings\` \`button-DiaryNoteAdd\`*
 > 
 > В этом случае выберите в верхнем меню пункт **View > Force Reload**. Если не помогло, откройте заметку **DiaryButton** в папке Templates, прогрузка кнопок должна помочь.
 

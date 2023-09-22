@@ -6,11 +6,11 @@ cssclass: diary, diary_plus
 
 **◉ DIARY V1.0**
 
-- `button-diaryPageHowto`
-- `button-diaryLight`
-- `button-diaryDark`
-- `button-diaryPageSettingsTags`
-- `button-diaryPageSettingsTemplatesActive`
+- `button-DiaryFilterSettingsHelp`
+- `button-DiaryLight`
+- `button-DiaryDark`
+- `button-DiaryFilterSettingsTags`
+- `button-DiaryFilterSettingsTemplatesActive`
 
 **ПЛАГИНЫ**
 
@@ -25,7 +25,7 @@ cssclass: diary, diary_plus
 **ШАБЛОНЫ**
 
 ```dataview
-table WITHOUT ID " - " + file.link AS  "`button-diaryMain` `button-diaryStar` `button-diaryAgo` `button-diaryMap` `button-diarySettingsActive` `button-diaryNote`" WHERE contains(file.folder, "Templates") AND contains(file.name, "Diary") SORT file.name asc
+table WITHOUT ID " - " + file.link AS  "`button-DiaryFilterMain` `button-DiaryFilterStar` `button-DiaryFilterAgo` `button-DiaryFilterMap` `button-DiaryFilterSettingsActive` `button-DiaryNoteAdd`" WHERE contains(file.folder, "Templates") AND contains(file.name, "Diary") SORT file.name asc
 ```
 
 ***

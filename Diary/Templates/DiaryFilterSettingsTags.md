@@ -6,11 +6,11 @@ cssclass: diary, diary_plus
 
 **◉ DIARY V1.0**
 
-- `button-diaryPageHowto`
-- `button-diaryLight`
-- `button-diaryDark`
-- `button-diaryPageSettingsTagsActive`
-- `button-diaryPageSettingsTemplates`
+- `button-DiaryFilterSettingsHelp`
+- `button-DiaryLight`
+- `button-DiaryDark`
+- `button-DiaryFilterSettingsTagsActive`
+- `button-DiaryFilterSettingsTemplates`
 
 **ПЛАГИНЫ**
 
@@ -25,7 +25,7 @@ cssclass: diary, diary_plus
 **ТЕГИ**
 
 ```dataview 
-TABLE WITHOUT ID ("- " + length(rows.file.link) + " " + tag ) AS "`button-diaryMain` `button-diaryStar` `button-diaryAgo` `button-diaryMap` `button-diarySettingsActive` `button-diaryNote`" WHERE Категория != null FLATTEN file.tags AS tag WHERE contains(tag, "") GROUP BY tag SORT length(rows.file.link) DESC 
+TABLE WITHOUT ID ("- " + length(rows.file.link) + " " + tag ) AS "`button-DiaryFilterMain` `button-DiaryFilterStar` `button-DiaryFilterAgo` `button-DiaryFilterMap` `button-DiaryFilterSettingsActive` `button-DiaryNoteAdd`" WHERE Категория != null FLATTEN file.tags AS tag WHERE contains(tag, "") GROUP BY tag SORT length(rows.file.link) DESC 
 ```
 
 ***
