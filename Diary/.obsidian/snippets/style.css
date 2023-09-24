@@ -38,14 +38,13 @@ a[href="#★"] {color: var(--diaryStar-color) !important; border-color: var(--di
 a[href="#▲"] {color: var(--diaryMood5-color) !important; border-color: var(--diaryMood5-color) !important} /* Отлично */
 a[href="#◉"] {color: var(--diaryMood4-color) !important; border-color: var(--diaryMood4-color) !important} /* Хорошо */
 a[href="#◓"] {color: var(--diaryMood3-color) !important; border-color: var(--diaryMood3-color) !important} /* Нормально */
-body.theme-dark a[href="#◓"] {color: var(--data-colorMainDark) !important; border-color: var(--data-colorMainDark) !important} /* Нормально для тёмной темы */
 a[href="#●"] {color: var(--diaryMood2-color) !important; border-color: var(--diaryMood2-color) !important} /* Плохо */
 a[href="#▼"] {color: var(--diaryMood1-color) !important; border-color: var(--diaryMood1-color) !important} /* Ужасно */
 
 /* Настройки цветов других тегов */
 a[href="#анализ"] {color: var(--diaryMood1-color) !important; border-color: var(--diaryMood1-color) !important}
-a[href="#понедельник"], a[href="#вторник"], a[href="#среда"], a[href="#четверг"], a[href="#пятница"], a[href="#суббота"], a[href="#воскресенье"] {color: var(--data-colorMain) !important; border-color: var(--data-colorMain) !important}
-body.theme-dark a[href="#понедельник"], body.theme-dark  a[href="#вторник"], body.theme-dark a[href="#среда"], body.theme-dark a[href="#четверг"], body.theme-dark a[href="#пятница"], body.theme-dark a[href="#суббота"], body.theme-dark a[href="#воскресенье"] {color: var(--data-colorMainDark) !important; border-color: var(--data-colorMainDark) !important}
+a[href="#понедельник"], a[href="#вторник"], a[href="#среда"], a[href="#четверг"], a[href="#пятница"], a[href="#суббота"], a[href="#воскресенье"] {color: var(--diaryMood3-color) !important; border-color: var(--diaryMood3-color) !important}
+body.theme-dark a[href="#понедельник"], body.theme-dark  a[href="#вторник"], body.theme-dark a[href="#среда"], body.theme-dark a[href="#четверг"], body.theme-dark a[href="#пятница"], body.theme-dark a[href="#суббота"], body.theme-dark a[href="#воскресенье"] {color: var(--diaryMood3-color) !important; border-color: var(--diaryMood3-color) !important}
 
 /* Отображение значка у ссылок */
 a[href^="geo"] {background-image: none; padding-right: 0px;} /* Скрыто по умолчанию, для отображения удалить всю строку */
@@ -76,14 +75,15 @@ body.theme-dark .diary__date {color: var(--data-colorMainDark)}
 .diary__date::first-letter {text-transform: uppercase}
 .diary__excerpt {flex-basis: auto;}
 .diary__body {display: flex; justify-content: space-between; align-items: flex-start}
+.diary__title, .diary__text, .diary__text-long, .diary__text-long-long {line-height: calc(var(--text-sizeBody)*1.5);}
 .diary__title {overflow: hidden; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; font-weight: 700; color: var(--text-normal)}
 .diary__text {overflow: hidden; display: -webkit-box; -webkit-line-clamp: calc(var(--note-line) - 1); -webkit-box-orient: vertical; color: var(--text-normal)}
 .diary__text-long {overflow: hidden; display: -webkit-box; -webkit-line-clamp: var(--note-line); -webkit-box-orient: vertical; color: var(--text-normal)}
 .diary__text-long-long {overflow: hidden; display: -webkit-box; -webkit-line-clamp: calc(var(--note-line) + 1); -webkit-box-orient: vertical; color: var(--text-normal)}
 .diary__position, .diary__weather, .diary__mood {color: var(--bottom-color); font-size: calc(var(--text-sizeBody) * 0.8)}
 .diary__devide::before {margin: 0 0.2rem; color: var(--bottom-color); content: "\2022"; opacity: 0.7} 
-.diary__imgContainer {display: block; flex-basis: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1); flex-shrink: 0; margin-left: 2rem}
-.diary__img {object-fit: cover; width: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1); height: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.8)) * 1); border-radius: 6px; box-shadow: 0px 0px var(--img-border) var(--img-border) var(--img-colorBorder)}
+.diary__imgContainer {display: block; flex-basis: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.5)) * 1.25); flex-shrink: 0; margin-left: 2rem}
+.diary__img {object-fit: cover; width: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.5)) * 1.25); height: calc((var(--note-line) * var(--text-sizeBody) + (var(--text-sizeBody) * 1.5)) * 1.25); border-radius: 6px; box-shadow: 0px 0px var(--img-border) var(--img-border) var(--img-colorBorder)}
 .diary__hide {display: none !important}
 
 /* Стили для кнопок светлой темы */
