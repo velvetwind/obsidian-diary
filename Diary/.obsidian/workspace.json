@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "file:///Users/",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -136,16 +136,6 @@
                 "file": "Quick start.md"
               }
             }
-          },
-          {
-            "id": "a752434861f1162c",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency"
-              }
-            }
           }
         ],
         "currentTab": 3
@@ -170,8 +160,10 @@
   },
   "active": "3c25ff2ebd4c5477",
   "lastOpenFiles": [
-    "Notes/2023-01-05.md",
+    "Templates/Diary.md",
     "Quick start.md",
+    "Notes/2023-01-05.md",
+    "Templates/DiaryButton.md",
     "Templates/DiaryPageSettingsHowto.md",
     "Notes/Diary.md",
     "Templates/DiaryPageStar.md",
@@ -194,8 +186,6 @@
     "Notes/1910-03-06.md",
     "Notes/1999-09-12.md",
     "Notes/2023-01-02.md",
-    "Notes/2023-01-03.md",
-    "Notes/2023-01-04.md",
     "Media/diary-razmetka-dnevnika.gif",
     "Media/2000-01-02.jpg",
     "Media/2023-01-04.jpg",

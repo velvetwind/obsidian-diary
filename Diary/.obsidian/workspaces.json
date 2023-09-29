@@ -13,15 +13,13 @@
               {
                 "id": "8936c528c41a30e0",
                 "type": "leaf",
-                "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "Notes/Diary.md",
+                    "file": "Templates/Diary.md",
                     "mode": "preview",
                     "source": true
-                  },
-                  "pinned": true
+                  }
                 }
               }
             ]
@@ -119,7 +117,7 @@
                 "state": {
                   "type": "backlink",
                   "state": {
-                    "file": "Notes/2023-01-05.md",
+                    "file": "Templates/Diary.md",
                     "collapseAll": true,
                     "extraContext": false,
                     "sortOrder": "alphabetical",
@@ -136,7 +134,7 @@
                 "state": {
                   "type": "outgoing-link",
                   "state": {
-                    "file": "Notes/2023-01-05.md",
+                    "file": "Templates/Diary.md",
                     "linksCollapsed": false,
                     "unlinkedCollapsed": true
                   }
@@ -159,7 +157,7 @@
                 "state": {
                   "type": "outline",
                   "state": {
-                    "file": "Notes/2023-01-05.md"
+                    "file": "Templates/Diary.md"
                   }
                 }
               }
@@ -184,7 +182,7 @@
           "table-editor-obsidian:Advanced Tables Toolbar": false
         }
       },
-      "active": "3c25ff2ebd4c5477"
+      "active": "8936c528c41a30e0"
     },
     "Заметки": {
       "main": {
