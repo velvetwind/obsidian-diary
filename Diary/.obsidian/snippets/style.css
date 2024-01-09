@@ -120,7 +120,7 @@ body.theme-dark .diary-button-Link:hover {border: 2px solid var(--data-colorMain
 .diary .dataview.table-view-table {width: 100% !important;}
 
 /* Фиксированное меню */
-.diary.diary_plus .dataview th:nth-child(1) {position: fixed; top: calc(var(--header-height) - 8px); background-color: var(--background-primary); width: var(--line-width); max-width: 100%;  box-shadow: 0px 8px 11px -15px #b0b0b0; z-index: 999; padding-bottom: 5px; padding-top: 9px;}
+.diary.diary_plus .dataview th:nth-child(1) {position: fixed; top: calc(var(--header-height) - 8px); background-color: var(--background-primary); width: var(--line-width); max-width: 100%;  box-shadow: 0px 8px 11px -15px #b0b0b0; z-index: 999; padding-bottom: 42px; padding-top: 9px;}
 .diary.diary_plus {opacity: 0; animation: ani 2s forwards;} @keyframes ani { 0% {opacity: 0;} 100% {opacity: 1;} }
 
 /* Стили для мобильных устройств */
